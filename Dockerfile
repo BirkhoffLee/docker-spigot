@@ -1,12 +1,12 @@
 FROM openjdk:8-jre
 
-ARG SPIGOT_URL=https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+ARG SPIGOT_BUILDTOOLS_URL=https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
 ARG SPIGOT_VERSION=latest
 
 WORKDIR /data
 WORKDIR /tmp/spigot
 
-ADD "${SPIGOT_URL}" /tmp/spigot/BuildTools.jar
+ADD "${SPIGOT_BUILDTOOLS_URL}" /tmp/spigot/BuildTools.jar
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
