@@ -1,4 +1,4 @@
-# docker-spigot
+# docker_spigot
 Our Docker image for running a Spigot instance.
 
 # Usage
