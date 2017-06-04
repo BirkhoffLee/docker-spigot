@@ -5,7 +5,6 @@ ARG SPIGOT_URL=https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBui
 WORKDIR /data
 ADD "${SPIGOT_URL}" /srv/spigot.jar
 RUN cd /srv && \
-    java -jar spigot.jar --version && \
     chmod 444 /srv/spigot.jar && \
     echo "eula=true" > /data/eula.txt
 
