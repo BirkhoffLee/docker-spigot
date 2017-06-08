@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 
 ARG SPIGOT_BUILDTOOLS_URL=https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
-ARG SPIGOT_VERSION={1.8.7}
+ARG SPIGOT_VERSION={1.8.3}
 
 WORKDIR /data
 WORKDIR /tmp/spigot
