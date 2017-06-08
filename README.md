@@ -1,5 +1,7 @@
 # docker-spigot
-Our Docker image for running a Spigot instance.
+My Docker image for running a Spigot instance.
+
+**This repository is no longer being updated; I'm moving this to a private repository. I didn't delete this repository because I hope it can help someone else.**
 
 # Usage
 ```bash
